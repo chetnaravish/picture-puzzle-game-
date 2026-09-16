@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-text: var(--theme-text);
+  --color-theme-dark: var(--theme-dark);
+  --color-theme-medium: var(--theme-medium);
+  --color-theme-brand: var(--theme-brand);
+  --color-theme-accent: var(--theme-accent);
+  --color-theme-card-bg: var(--theme-card-bg);
+}
+
+:root {
+  /* Default values (Original Warm Wood/Light Table theme) */
+  --theme-bg: #d2b48c;
+  --theme-text: #3D2314;
+  --theme-dark: #2D1B11;
+  --theme-medium: #5E3A22;
+  --theme-brand: #8b5a2b;
+  --theme-accent: #c19a6b;
+  --theme-card-bg: #ffffff;
+}
+
+html, body {
+  @apply antialiased transition-colors duration-500;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+body {
+  overflow-y: overlay;
+}
+
+/* Theme overrides */
+.theme-wood {
+  --theme-bg: #d2b48c;
+  --theme-text: #3D2314;
+  --theme-dark: #2D1B11;
+  --theme-medium: #5E3A22;
+  --theme-brand: #8b5a2b;
+  --theme-accent: #c19a6b;
+  --theme-card-bg: #ffffff;
+}
+
+.theme-sakura {
+  --theme-bg: #fbcfe8;
+  --theme-text: #4d0426;
+  --theme-dark: #3c021d;
+  --theme-medium: #8c0d4a;
+  --theme-brand: #db2777;
+  --theme-accent: #f472b6;
+  --theme-card-bg: #ffffff;
+}
+
+.theme-sky {
+  --theme-bg: #bae6fd;
+  --theme-text: #0c4a6e;
+  --theme-dark: #032f3e;
+  --theme-medium: #0369a1;
+  --theme-brand: #0284c7;
+  --theme-accent: #38bdf8;
+  --theme-card-bg: #ffffff;
+}
+
+.theme-mint {
+  --theme-bg: #bbf7d0;
+  --theme-text: #14532d;
+  --theme-dark: #043e1d;
+  --theme-medium: #15803d;
+  --theme-brand: #16a34a;
+  --theme-accent: #4ade80;
+  --theme-card-bg: #ffffff;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .styled-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .styled-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .styled-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+  }
+}
+

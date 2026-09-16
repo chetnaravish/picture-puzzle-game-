@@ -1,0 +1,6 @@
+{
+  "name": "Picture Puzzle Pro",
+  "description": "A jigsaw-style picture puzzle game with progressive difficulty levels, using real images. Complete puzzles to unlock the next level and earn rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
